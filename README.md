@@ -133,6 +133,49 @@ $ npm start
   * 모든 게시글 조회 및 수정,제
 
 
+## 화면구성
+### 1.게시판 기능
+### 게시글 및 특정 게시글 조회
+* 비로그인 경우, 공지사항 페이지에만 접근이 가능합니다. 모든 공지사항 게시글 목록을 조회할 수 있습니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/4812cfee-acb6-4d73-9791-343c495b868b">
+
+* 페이징 기능을 통해 한 페이지에서 최대 10개의 게시글이 조회됩니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/b10c440a-09b8-4215-b0ed-ed07acfdadce">
+
+* 공지사항 게시글의 제목을 클릭하면, 게시글의 상세 내용을 조회할 수 있습니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/fc7ab8b4-fd9a-4231-8322-802c0c39e1c6">
+
+* 이때 특정 게시글 조회하여도 로그인 상태가 아닌 경우, 조회수가 증가하지 않습니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/74807239-8bb4-4371-be25-ede762b4c751">
+
+* 로그인한 경우, 모든 게시글 [공지사항, 1:1 문의사항] 페이지에 접근이 가능합니다. 모든 게시글 목록을 조회할 수 있습니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/739de557-26ff-44ce-85ff-5d85df0d0bb4">
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/14d85526-9849-4214-8390-98d5baeb934c">
+
+* 페이징 기능을 통해 한 페이지에서 최대 10개의 게시글이 조회됩니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/3ed45704-0a37-4a32-bc80-72e4baaae873">
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/480f04b3-1cb4-4de4-aa04-66753fb8e7f4">
+
+* 로그인한 상태이며 공지사항 게시판인 경우, 모든 게시글의 제목을 클릭하면 글 상세 내용을 조회할 수 있습니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/dfe93faf-3cf3-497a-8f37-b6a600ef8838">
+
+* 로그인 한 경우에만 조회수가 +1 증가합니다. 이때 한 사람이 하나의 게시글을 여러번 조회하는 경우엔, 조회수가 중복으로 증가하지 않도록 조회수 중복방지가 적용되어있습니다.
+<img width="1724" src="https://github.com/kh-teamProject/gyemoim/assets/117277248/dfe93faf-3cf3-497a-8f37-b6a600ef8838">
+
+
+
+
+### 게시글 검색
+* 게시글의 제목과 내용 또는 작성자로 게시글을 검색할 수 있습니다.
+
+### 2.댓글 기능
+### 댓글 조회
+*
+|고객 운영 시각화|계모임 운영 시각화|
+|---|---|
+|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/f5d72c3e-7447-42c7-ac23-03ae14de0280" width="500px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/4350e1ae-62e3-46cf-8d92-23f69a1a9d3f" width="500px">|
+
+
 ## ERD 설계
 |전체|회원관리|
 |---|---|
@@ -147,30 +190,6 @@ $ npm start
 |---|---|
 |<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/c3be9267-ef5b-4381-ac4e-2dd8054eb0a4" width="450px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/f083c7a1-5a38-4621-9a53-07623d41fdc5" width="450px">|
 
-## 화면구성
-### 회원관리
-|회원가입 및 로그인|마이페이지|
-|---|---|
-|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/8f573e44-aaa6-4bc8-a692-ed45e691f63c" width="500px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/1f4156b5-d100-4c93-99d1-57cc3a12d1a2" width="500px">|
-
-### 계모임
-|계모임 생성|계모임 선택|
-|---|---|
-|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/ee0057f3-8f08-407d-a0a4-d05bfd6b9955" width="500px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/8a6d7c53-1130-4dca-a552-5ee76db7e56c" width="500px">|
-
-|계모임 운영|계모임 추천 및 페이징|
-|---|---|
-|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/8a1a5875-fb2a-45d0-859c-cf00aecb672d" width="500px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/79eaf936-efa9-4860-8c60-2341ffbf44a9" width="500px">|
-
-### 게시판
-|게시판|댓글|
-|---|---|
-|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277248/f0e2b93d-3389-4c9a-b966-f480f7a64a1f" width="500px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277248/8fa3b2ac-a4c8-4d5a-abc6-9e448fee18a4" width="500px">|
-
-### 시각화
-|고객 운영 시각화|계모임 운영 시각화|
-|---|---|
-|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/f5d72c3e-7447-42c7-ac23-03ae14de0280" width="500px">|<img src="https://github.com/kh-teamProject/gyemoim/assets/117277304/4350e1ae-62e3-46cf-8d92-23f69a1a9d3f" width="500px">|
 
 ## 자체 평가 의견
 * 먹튀 없는 계모임을 위해서 채권 추심제도를 이용해야했는데 그럴수 없어서 아쉽습니다. 채권 추심제도만 이용할 수 있다면 실무 활용도 가능할 것 같습니다. 
